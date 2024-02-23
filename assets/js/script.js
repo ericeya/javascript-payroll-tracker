@@ -7,7 +7,7 @@ const employeesArray = []
 // Collect employee data
 const collectEmployees = function() {
   // TODO: Get user input to create and return an array of employee objects
-    let  userFirstName = prompt("Enter employee's first name:", " ");
+    let  userFirstName = prompt("Enter employee's first name:");
       while (/^[a-zA-Z-]+$/.test(userFirstName)===false){
         userFirstName = prompt("Please enter alphabets only")
       }
