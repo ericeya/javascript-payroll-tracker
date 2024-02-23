@@ -7,6 +7,9 @@ const employeesArray = []
 // Collect employee data
 const collectEmployees = function() {
   // TODO: Get user input to create and return an array of employee objects
+  let addAnother=true
+  while (addAnother) {   
+  
     let  userFirstName = prompt("Enter employee's first name:");
       while (/^[a-zA-Z-]+$/.test(userFirstName)===false){
         userFirstName = prompt("Please enter alphabets only")
@@ -31,8 +34,6 @@ const collectEmployees = function() {
   employeesArray.push(employeeData)
     
   addAnother = confirm("Add another?")
-  while (addAnother) {
-    collectEmployees();
   }
   return employeesArray
   
